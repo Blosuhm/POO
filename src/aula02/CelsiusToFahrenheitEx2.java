@@ -2,7 +2,6 @@ package src.aula02;
 
 import java.text.MessageFormat;
 import src.aula02.utils.Utils;
-import java.util.Scanner;
 
 public class CelsiusToFahrenheitEx2 {
     public static void main(String[] args) {
