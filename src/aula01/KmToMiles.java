@@ -1,14 +1,11 @@
 package src.aula01;
-import java.util.Scanner;
+import src.aula02.utils.Utils;
 
 public class KmToMiles {
 	public static void main(String[] args) {
 		double km, miles;
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Insira distância em km: ");
-		km = sc.nextDouble();
+		km = Double.parseDouble((Utils.input("Insira a distância en kilometros: ")));
 		miles = km / 1.609;
-		System.out.println("A distância em milhas é " + miles);
-		sc.close();
+		Utils.print("A distância em milhas é: " + miles);
 	}
 }
