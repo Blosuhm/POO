@@ -5,7 +5,6 @@ import src.aula02.utils.Utils;
 public class CountDownEx9 {
     
     public static void main(String[] args) {
-        String count = "";
         StringBuilder builder = new StringBuilder();
         int number = 0;
         
