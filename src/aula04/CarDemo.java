@@ -1,31 +1,90 @@
 package src.aula04;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class CarDemo {
 
     static Scanner sc = new Scanner(System.in);
 
     static int registerCars(Car[] cars) {
-        // TODO: pede dados dos carros ao utilizador e acrescenta ao vetor
-        // registo de carros termina quando o utilizador inserir uma linha vazia
-        // devolve número de carros registados
-        System.out.print("Insira dados do carro (marca modelo ano quilómetros): ");
+        String regex = "^(\\w+) ((\\w+ ?)+) (\\d{4}) (\\d+)$";
+        String line = "";
+        boolean match = true;
+        Pattern pattern = Pattern.compile(regex);
+        int numCars = 0;
+
+        for (int i = 0; i < cars.length; i++) {
+            Matcher matcher;
+            do {
+                System.out.print("Insira dados do carro (marca modelo ano quilómetros): ");
+                line = sc.nextLine();
+                match = Pattern.matches(regex, line);
+                if (line.isEmpty()) {
+                    return numCars;
+                }
+                if (!match) {
+                    System.out.println("Dados mal formatados. Tente novamente.");
+                }
+                matcher = pattern.matcher(line);
+            } while (!match);
+
+            numCars++;
+
+            matcher.find();
+            String make = matcher.group(1);
+            String model = matcher.group(2);
+            int year = Integer.parseInt(matcher.group(4));
+            int kms = Integer.parseInt(matcher.group(5));
+            cars[i] = new Car(make, model, year, kms);
+        }
+        return cars.length;
     }
 
     static void registerTrips(Car[] cars, int numCars) {
-        // TODO: pede dados das viagens ao utilizador e atualiza informação do carro
-        // registo de viagens termina quando o utilizador inserir uma linha vazia
-        System.out.print("Registe uma viagem no formato \"carro:distância\": ");
+        String regex = "^(\\d+):(\\d+)$";
+        String line = "";
+        boolean match = true;
+
+        while (true) {
+            do {
+                System.out.print("Registe uma viagem no formato \"carro:distância\": ");
+                line = sc.nextLine();
+                match = Pattern.matches(regex, line);
+                if (line.isEmpty()) {
+                    return;
+                }
+                if (!match) {
+                    System.out.println("Dados mal formatados. Tente novamente.");
+                }
+            } while (!match);
+
+            String[] parts = line.split(":");
+            int car = Integer.parseInt(parts[0]);
+            int distance = Integer.parseInt(parts[1]);
+
+            if (car < 0 || car >= numCars) {
+                System.out.println("Carro inválido. Tente novamente.");
+                continue;
+            }
+            if (distance < 0) {
+                System.out.println("Distância inválida. Tente novamente.");
+                continue;
+            }
+
+            cars[car].drive(distance);
+        }
     }
 
     static void listCars(Car[] cars) {
         System.out.println("\nCarros registados: ");
-        // TODO: lista todos os carros registados
-        // Exemplo de resultado
-        // Carros registados:
-        // Toyota Camry, 2010, kms: 234346
-        // Renault Megane Sport Tourer, 2015, kms: 32536
+        for (int i = 0; i < cars.length; i++) {
+            if (cars[i] == null) {
+                break;
+            }
+            System.out.println(cars[i]);
+        }
 
         System.out.println("\n");
     }
