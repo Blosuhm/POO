@@ -190,25 +190,3 @@ public class FiguresMenu {
     }
 
 }
-
-class Test {
-    static ArrayList<Integer> list = new ArrayList<>();
-
-    public static void main(String[] args) {
-        addNumber(1);
-        addNumber(0);
-        addNumber(2);
-        listNumbers();
-
-    }
-
-    public static void addNumber(int num) {
-        list.add(num);
-    }
-
-    public static void listNumbers() {
-        for (int i : list) {
-            System.out.println(i);
-        }
-    }
-}
