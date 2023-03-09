@@ -29,13 +29,13 @@ public class Circle {
         return Math.PI * Math.pow(radius, 2);
     }
 
-    public double getCircumference() {
+    public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 
     @Override
     public String toString() {
-        return "Circle{" + "radius=" + radius + ", area=" + getArea() + ", circumference=" + getCircumference() + '}';
+        return "Circle{" + "radius=" + radius + ", area=" + getArea() + ", perimeter=" + getPerimeter() + '}';
     }
 
     @Override

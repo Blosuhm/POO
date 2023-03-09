@@ -1,7 +1,7 @@
 package src.utils;
 import java.util.Scanner;
 
-public class Utils {
+class Utils {
     public static void print(String s) {
         System.out.println(s);
     }
