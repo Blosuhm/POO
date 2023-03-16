@@ -12,7 +12,7 @@ public class FiguresMenu {
     static ArrayList<Rectangle> listOfRectangle = new ArrayList<>();
     static ArrayList<Triangle> listOfTriangles = new ArrayList<>();
 
-    static final String validNumber = "^\\d+([.]\\d+)?$";
+    static final String VALID_NUMBER_STRING = "^\\d+([.]\\d+)?$";
 
     public static void main(String[] args) {
         int choice = 0;
@@ -80,7 +80,7 @@ public class FiguresMenu {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the radius: ");
         String input = sc.nextLine();
-        if (!input.matches(validNumber)) {
+        if (!input.matches(VALID_NUMBER_STRING)) {
             System.out.println("Invalid input. Try again.");
             return;
         }
@@ -94,14 +94,14 @@ public class FiguresMenu {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the width: ");
         String input = sc.nextLine();
-        if (!input.matches(validNumber)) {
+        if (!input.matches(VALID_NUMBER_STRING)) {
             System.out.println("Invalid input. Try again.");
             return;
         }
         double width = Double.parseDouble(input);
         System.out.print("Enter the height: ");
         input = sc.nextLine();
-        if (!input.matches(validNumber)) {
+        if (!input.matches(VALID_NUMBER_STRING)) {
             return;
         }
         double height = Double.parseDouble(input);
@@ -114,20 +114,20 @@ public class FiguresMenu {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the side A: ");
         String input = sc.nextLine();
-        if (!input.matches(validNumber)) {
+        if (!input.matches(VALID_NUMBER_STRING)) {
             System.out.println("Invalid input. Try again.");
             return;
         }
         double sideA = Double.parseDouble(input);
         System.out.print("Enter the side B: ");
         input = sc.nextLine();
-        if (!input.matches(validNumber)) {
+        if (!input.matches(VALID_NUMBER_STRING)) {
             return;
         }
         double sideB = Double.parseDouble(input);
         System.out.print("Enter the side C: ");
         input = sc.nextLine();
-        if (!input.matches(validNumber)) {
+        if (!input.matches(VALID_NUMBER_STRING)) {
             return;
         }
         double sideC = Double.parseDouble(input);

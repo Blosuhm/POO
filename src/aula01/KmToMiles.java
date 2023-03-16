@@ -1,5 +1,6 @@
-package src.aula01;
-import src.aula02.utils.Utils;
+package aula01;
+
+import aula02.utils.Utils;
 
 public class KmToMiles {
 	public static void main(String[] args) {

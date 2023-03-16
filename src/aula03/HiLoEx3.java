@@ -30,11 +30,12 @@ public class HiLoEx3 {
             if (guess == number) {
                 Utils.print("You guessed it!");
                 break;
-            } else if (guess > number) {
-                Utils.print("Too high!");
-            } else {
-                Utils.print("Too low!");
             }
+            if (guess > number) {
+                Utils.print("Too high!");
+                continue;
+            }
+            Utils.print("Too low!");
 
         }
 
