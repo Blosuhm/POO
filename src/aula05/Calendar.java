@@ -89,7 +89,7 @@ public class Calendar {
     @Override
     public String toString() {
         StringBuilder calendar = new StringBuilder();
-        for (int i = 1; i < 12; i++) {
+        for (int i = 1; i < 13; i++) {
             calendar.append(printMonth(i)).append("\n\n");
         }
         return calendar.toString();
