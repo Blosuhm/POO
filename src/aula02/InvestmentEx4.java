@@ -1,6 +1,6 @@
-package src.aula02;
+package aula02;
 
-import src.aula02.utils.Utils;
+import aula02.utils.Utils;
 
 public class InvestmentEx4 {
   public static void main(String[] args) {
@@ -8,9 +8,9 @@ public class InvestmentEx4 {
     double interest;
 
     investment = Double.parseDouble(Utils.input("Insira o valor do investimento: "));
-    interest = Double.valueOf(Utils.input("Insira a taxa de juros em percentagem: ")+"e-2");
+    interest = Double.valueOf(Utils.input("Insira a taxa de juros em percentagem: ") + "e-2");
 
-    for (int month = 1; month <= 3; month++){
+    for (int month = 1; month <= 3; month++) {
       investment *= (1 + interest);
     }
 

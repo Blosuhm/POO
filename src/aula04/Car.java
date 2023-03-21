@@ -1,4 +1,4 @@
-package src.aula04;
+package aula04;
 
 public class Car {
     private String make;

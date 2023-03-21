@@ -1,6 +1,6 @@
-package src.aula03;
+package aula03;
 
-import src.aula03.utils.Utils;
+import aula03.utils.Utils;
 
 class InvestmentEx2 {
     public static void main(String[] args) {

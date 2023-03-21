@@ -1,9 +1,9 @@
-package src.aula02;
+package aula02;
 
-import src.aula02.utils.Utils;
+import aula02.utils.Utils;
 
 public class MinMaxAvgCountEx10 {
-    
+
     public static void main(String[] args) {
         int number = 0;
         int first = 0;
@@ -12,9 +12,10 @@ public class MinMaxAvgCountEx10 {
         int max = 0;
         int sum = 0;
         double avg = 0;
-        
+
         do {
-            number = Integer.parseInt(Utils.input("Insira um número inteiro (volte a insereir o primeiro para terminar): "));
+            number = Integer
+                    .parseInt(Utils.input("Insira um número inteiro (volte a insereir o primeiro para terminar): "));
             if (number == first && count > 0) {
                 break;
             }
@@ -28,9 +29,9 @@ public class MinMaxAvgCountEx10 {
             sum += number;
             count++;
         } while (true);
-        
+
         avg = (double) sum / count;
-        
+
         Utils.print("O maior valor lido é: " + max);
         Utils.print("O menor valor lido é: " + min);
         Utils.print("A média dos valores lidos é: " + avg);

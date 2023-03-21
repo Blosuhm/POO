@@ -1,6 +1,6 @@
-package src.aula02;
+package aula02;
 
-import src.aula02.utils.Utils;
+import aula02.utils.Utils;
 
 public class SecondsToHMSEx6 {
 
@@ -15,6 +15,7 @@ public class SecondsToHMSEx6 {
         minutes = (seconds % 3600) / 60;
         secs = (seconds % 3600) % 60;
 
-        Utils.print("O número de segundos introduzido corresponde a " + hours + " horas, " + minutes + " minutos e " + secs + " segundos.");
+        Utils.print("O número de segundos introduzido corresponde a " + hours + " horas, " + minutes + " minutos e "
+                + secs + " segundos.");
     }
 }

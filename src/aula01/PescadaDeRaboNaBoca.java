@@ -1,4 +1,4 @@
-package src.aula01;
+package aula01;
 
 public class PescadaDeRaboNaBoca {
 
@@ -9,7 +9,7 @@ public class PescadaDeRaboNaBoca {
 	public static void recursivoSimples(int x) {
 		System.out.println(x);
 		x--;
-		if (x>0) 
+		if (x > 0)
 			recursivoSimples(x);
 	}
 

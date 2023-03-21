@@ -1,6 +1,8 @@
 package aula05;
 
-class DateYMD {
+import java.time.LocalDateTime;
+
+public class DateYMD {
     private int year;
     private int month;
     private int day;
@@ -12,6 +14,19 @@ class DateYMD {
         this.year = year;
         this.month = month;
         this.day = day;
+    }
+
+    public DateYMD(DateYMD date) {
+        this.year = date.getYear();
+        this.month = date.getMonth();
+        this.day = date.getDay();
+    }
+
+    public DateYMD() {
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        this.year = currentDateTime.getYear();
+        this.month = currentDateTime.getMonthValue();
+        this.day = currentDateTime.getDayOfMonth();
     }
 
     public static boolean validMonth(int month) {
@@ -34,7 +49,7 @@ class DateYMD {
     }
 
     public static boolean validDate(int day, int month, int year) {
-        return day >= 1 && day <= monthDays(month, year) && validMonth(month);
+        return 1 <= day && day <= monthDays(month, year) && validMonth(month);
 
     }
 

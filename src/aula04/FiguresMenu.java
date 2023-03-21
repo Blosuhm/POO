@@ -1,11 +1,11 @@
-package src.aula04;
+package aula04;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import src.aula04.geometric_figures.Circle;
-import src.aula04.geometric_figures.Rectangle;
-import src.aula04.geometric_figures.Triangle;
+import aula04.geometric_figures.Circle;
+import aula04.geometric_figures.Rectangle;
+import aula04.geometric_figures.Triangle;
 
 public class FiguresMenu {
     static ArrayList<Circle> listOfCircles = new ArrayList<>();

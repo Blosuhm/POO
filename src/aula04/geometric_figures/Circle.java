@@ -1,4 +1,4 @@
-package src.aula04.geometric_figures;
+package aula04.geometric_figures;
 
 public class Circle {
     private double radius;

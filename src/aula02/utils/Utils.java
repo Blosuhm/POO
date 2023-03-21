@@ -1,4 +1,5 @@
-package src.aula02.utils;
+package aula02.utils;
+
 import java.util.Scanner;
 
 public class Utils {
@@ -61,11 +62,11 @@ public class Utils {
             System.out.println(obj);
         }
     }
-    
+
     public static String input(String s) {
         System.out.print(s);
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
-        
+
     }
 }

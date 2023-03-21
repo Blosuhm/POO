@@ -1,6 +1,6 @@
-package src.aula02;
+package aula02;
 
-import src.aula02.utils.Utils;
+import aula02.utils.Utils;
 
 public class AverageVelocityEx5 {
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class AverageVelocityEx5 {
                 Utils.print("A velocidade tem de ser positiva");
             }
         }
-        
+
         while (distance2 <= 0) {
             distance2 = Double.parseDouble(Utils.input("Insira a distância percorrida em km no segundo trajeto: "));
             if (distance2 <= 0) {
@@ -38,9 +38,10 @@ public class AverageVelocityEx5 {
             }
         }
 
-    averageVelocity = velocity1*velocity2*(distance1+distance2)/(distance1*velocity2+distance2*velocity1);
+        averageVelocity = velocity1 * velocity2 * (distance1 + distance2)
+                / (distance1 * velocity2 + distance2 * velocity1);
 
-    Utils.print("A velocidade média é " + averageVelocity);
+        Utils.print("A velocidade média é " + averageVelocity);
 
     }
 }

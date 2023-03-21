@@ -24,6 +24,7 @@ public class RealEstate {
             System.out.println(String.format("Property %d not available", propertyID));
             return;
         }
+        System.out.println(String.format("Property %d sold", propertyID));
         properties.get(propertyID - FIRST_ID).setAvailability(false);
     }
 
@@ -32,14 +33,30 @@ public class RealEstate {
             System.out.println(String.format("Property %d does not exist", propertyID));
             return;
         }
-        if (durationDays <= 0) {
-            throw new IllegalArgumentException("Duration must be positive!");
+        if (!properties.get(propertyID - FIRST_ID).getAvailability()) {
+            System.out.println(String.format("Property %d not available", propertyID));
+            return;
         }
         auctions.add(new Auction(propertyID, date, durationDays));
     }
 
     public boolean propertyExists(int propertyID) {
         return FIRST_ID <= propertyID && propertyID <= lastID;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder realEstate = new StringBuilder();
+        for (Property property : properties) {
+            realEstate.append(property);
+            for (Auction auction : auctions) {
+                if (auction.getPropertyID() == properties.indexOf(property) + FIRST_ID) {
+                    realEstate.append("; " + auction);
+                }
+            }
+            realEstate.append("\n");
+        }
+        return realEstate.toString();
     }
 
 }

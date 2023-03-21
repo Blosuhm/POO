@@ -49,25 +49,27 @@ public class Calendar {
             throw new IllegalArgumentException("Invalid month: " + month);
         }
 
-        StringBuilder monthRepr = new StringBuilder();
-        monthRepr.append(this.year).append(" ").append(monthNames[month - 1]);
         ArrayList<Integer> monthEvents = new ArrayList<>();
         final String weekDays = " Su  Mo  Tu  We  Th  Fr  Sa ";
 
+        StringBuilder monthRepr = new StringBuilder();
+        monthRepr.append(this.year).append(" ").append(monthNames[month - 1]);
+
         int numSpaces = weekDays.length() / 2 - monthRepr.length() / 2;
         String spaces = " ".repeat(numSpaces);
-        monthRepr.insert(0, spaces);
-        monthRepr.append("\n").append(weekDays).append("\n");
+        monthRepr.insert(0, spaces).append("\n").append(weekDays).append("\n");
 
         for (DateYMD event : events) {
             if (event.getMonth() == month) {
                 monthEvents.add(event.getDay());
             }
         }
+
         int firstDay = firstWeekDayMonth[month - 1];
         for (int j = 0; j < firstDay - 1; j++) {
             monthRepr.append("    ");
         }
+
         for (int i = 1; i <= DateYMD.monthDays(month, this.year); i++) {
             boolean hasEvent = false;
             for (int event : monthEvents) {
@@ -76,13 +78,14 @@ public class Calendar {
                     break;
                 }
             }
+
             monthRepr.append((String.format(hasEvent ? "*%02d " : " %02d ", i)));
 
             if ((i + firstDay - 1) % 7 == 0) {
                 monthRepr.append("\n");
             }
-
         }
+
         return monthRepr.toString();
     }
 

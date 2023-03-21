@@ -1,6 +1,6 @@
-package src.aula02;
+package aula02;
 
-import src.aula02.utils.Utils;
+import aula02.utils.Utils;
 
 public class HypotenuseEx8 {
 

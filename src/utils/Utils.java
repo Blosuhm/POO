@@ -1,4 +1,5 @@
-package src.utils;
+package utils;
+
 import java.util.Scanner;
 
 class Utils {
@@ -61,11 +62,11 @@ class Utils {
             System.out.println(obj);
         }
     }
-    
+
     public static String input(String s) {
         System.out.print(s);
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
-        
+
     }
 }
