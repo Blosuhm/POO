@@ -45,5 +45,4 @@ public class Student extends Person {
     public void setNmec(int nmec) {
         this.nmec = nmec;
     }
-
 }

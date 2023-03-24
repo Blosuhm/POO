@@ -61,4 +61,9 @@ public class Person {
     public String getName() {
         return this.name;
     }
+
+    @Override
+    public String toString() {
+        return getName() + "; " + ", cc: " + getCc() + "; Birth Date: " + getBirthDate();
+    }
 }
