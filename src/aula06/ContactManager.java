@@ -1,6 +1,7 @@
 package aula06;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -15,7 +16,11 @@ public class ContactManager {
 
         do {
             listOptions();
-            choice = Integer.parseInt(input("^[0-5]$", "", true));
+            choice = Integer.parseInt(input("^[0-5]$", "Invalid option! Try again: ", true));
+            if (choice > 1 && !contactsExists()) {
+                System.out.println("No contacts to manage!");
+                continue;
+            }
             selector(choice);
 
         } while (choice != 0);
@@ -89,6 +94,102 @@ public class ContactManager {
         }
     }
 
+    private static void searchContacts() {
+        message("Choose how you want to search\n");
+        message("1 - Get contact by index\n");
+        message("2 - Get contact by name\n");
+        message("3 - Get contact by phone number\n");
+        message("Your choice: ");
+        String input = input("^[1-3]$", "Invalid Choice!");
+        if (input == null) {
+            return;
+        }
+        List<Contact> filteredContacts = null;
+        switch (input) {
+        case "1":
+            message("Index: ");
+            int index = Integer.parseInt(input("^[0-" + (contacts.size() - 1) + "]+$", "Invalid index!"));
+            filteredContacts = Arrays.asList(getContactByIndex(index));
+            if (filteredContacts.isEmpty()) {
+                System.out.println("No contacts found!");
+                return;
+            }
+            break;
+        case "2":
+            message("Name: ");
+            String name = input("^[a-zA-Z ]+$", "Invalid Name!");
+            filteredContacts = contacts.stream().filter(contact -> contact.getPerson().getName().equals(name))
+                    .collect(Collectors.toList());
+            if (filteredContacts.isEmpty()) {
+                System.out.println("No contacts found!");
+                return;
+            }
+            break;
+        case "3":
+            message("Phone Number: ");
+            int number = Integer.parseInt(input("^9[0-9]{8}$", "Invalid phone number!"));
+            filteredContacts = contacts.stream().filter(contact -> contact.getPhone() == number)
+                    .collect(Collectors.toList());
+            if (filteredContacts.isEmpty()) {
+                System.out.println("No contacts found!");
+                return;
+            }
+            break;
+        default:
+            System.out.println("no such option");
+            break;
+        }
+
+        for (Contact contact : filteredContacts) {
+            System.out.println(contact);
+        }
+    }
+
+    private static void removeContact() {
+        message("Choose how you want to find the contact to remove\n");
+        message("1 - Get contact by index\n");
+        message("2 - Get contact by name\n");
+        message("3 - Get contact by phone number\n");
+        message("Your choice: ");
+        String input = input("^[1-3]$", "Invalid Choice!");
+        if (input == null) {
+            return;
+        }
+        Contact contact = null;
+        switch (input) {
+        case "1":
+            message("Index: ");
+            int index = Integer.parseInt(input("^[0-" + (contacts.size() - 1) + "]+$", "Invalid index!"));
+            contact = getContactByIndex(index);
+            if (contact == null) {
+                return;
+            }
+            break;
+        case "2":
+            message("Name: ");
+            String name = input("^[a-zA-Z ]+$", "Invalid Name!");
+            contact = getContactByName(name);
+            if (contact == null) {
+                return;
+            }
+            break;
+        case "3":
+            message("Phone Number: ");
+            int number = Integer.parseInt(input("^9[0-9]{8}$", "Invalid phone number!"));
+            contact = getContactByNumber(number);
+            if (contact == null) {
+                return;
+            }
+            break;
+        default:
+            System.out.println("no such option");
+            break;
+
+        }
+
+        contacts.remove(contact);
+    }
+
     private static void listContacts() {
         for (int i = 0; i < contacts.size(); i++) {
             System.out.println(i + " - " + contacts.get(i));
@@ -104,7 +205,8 @@ public class ContactManager {
         String input;
 
         message("Enter the person following this pattern (name-surname cc birthday(yyyy-mm-dd)): ");
-        input = input("^$", "Invalid person!");
+        input = input("^([a-zA-Z]+-)?[a-zA-Z]+ [1-9][0-9]{7} [0-9]{1,4}-(0?[1-9]|1[0-2])-[0-9]{1,9}$",
+                "Invalid person!");
         if (input == null) {
             return;
         }
@@ -115,7 +217,7 @@ public class ContactManager {
         }
 
         message("Enter phone number (must start with 9 and have 9 total digits): ");
-        input = input("^$", "Invalid phone number!");
+        input = input("^9[0-9]{8}$", "Invalid phone number!");
         if (input == null) {
             return;
         }
@@ -171,10 +273,10 @@ public class ContactManager {
         if (input == null) {
             return;
         }
-        Contact contact;
+        Contact contact = null;
         switch (input) {
         case "1":
-            message("Index :");
+            message("Index: ");
             int index = Integer.parseInt(input("^[0-" + (contacts.size() - 1) + "]+$", "Invalid index!"));
             contact = getContactByIndex(index);
             if (contact == null) {
@@ -199,7 +301,7 @@ public class ContactManager {
             break;
         default:
             System.out.println("no such option");
-            break;
+            return;
 
         }
 
@@ -208,18 +310,29 @@ public class ContactManager {
         message("2 - Email\n");
         message("Your choice: ");
         input = input("^[12]$", null);
+        if (input == null) {
+            return;
+        }
         switch (input) {
         case "1":
             message("Enter new phone: ");
-            int phone = Integer.parseInt(input("^9[0-9]{8}$", "Invalid Phone!"));
+            String phoneInput = input("^9[0-9]{8}$", "Invalid Phone!");
+            if (phoneInput == null) {
+                return;
+            }
+            int phone = Integer.parseInt(phoneInput);
             contact.setPhone(phone);
             break;
 
         case "2":
-            message("Enter new email: ")
+            message("Enter new email: ");
             String email = input(Contact.EMAIL_REGEX, "Invalid Email!");
+            if (email == null) {
+                return;
+            }
+            contact.setEmail(email);
             break;
-        
+
         default:
             message("invalid choice");
             break;
@@ -277,5 +390,9 @@ public class ContactManager {
         }
 
         return contactsByName.get(Integer.parseInt(input));
+    }
+
+    private static boolean contactsExists() {
+        return !contacts.isEmpty();
     }
 }

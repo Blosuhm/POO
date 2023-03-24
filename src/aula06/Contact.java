@@ -30,7 +30,7 @@ public class Contact {
     }
 
     public boolean isValidPhone(int phone) {
-        return 999999999 <= phone && phone <= 900000000;
+        return 900000000 <= phone && phone <= 999999999;
     }
 
     private void contactValidator(String email, int phone) {
@@ -90,6 +90,11 @@ public class Contact {
         if (!isValidPhone(phone)) {
             throw new IllegalArgumentException("Invalid phone");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + this.person.getName() + "; Number: " + this.phone + "; Email: " + this.email;
     }
 
 }
