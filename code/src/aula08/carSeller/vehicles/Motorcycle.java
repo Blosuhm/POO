@@ -1,23 +1,18 @@
 package aula08.carSeller.vehicles;
 
-enum Type {
-    Sport,
-    Road
-}
+public class Motorcycle extends Vehicle {
+    private MotorcycleType type;
 
-public class Motorcicle extends Vehicle {
-    private Type type;
-
-    public Motorcicle(String licensePlate, String make, String model, int power, Type type) {
+    public Motorcycle(String licensePlate, String make, String model, int power, MotorcycleType type) {
         super(licensePlate, make, model, power);
         this.type = type;
     }
 
-    public Type getType() {
+    public MotorcycleType getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(MotorcycleType type) {
         this.type = type;
     }
 }
