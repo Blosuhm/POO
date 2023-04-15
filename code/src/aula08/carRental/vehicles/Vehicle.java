@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Vehicle implements TraveledDistance {
-    private final ArrayList<Integer> traveledDistances = new ArrayList<>();
+
+    protected final ArrayList<Integer> traveledDistances = new ArrayList<>();
     int power;
     private String licensePlate;
     private String make;
@@ -85,14 +86,25 @@ public class Vehicle implements TraveledDistance {
         this.power = power;
     }
 
+    @Override
     public void trajectory(int kilometers) {
+        validateDistance(kilometers);
+
         traveledDistances.add(kilometers);
     }
 
+    public void validateDistance(int kilometers) {
+        if (kilometers < 0) {
+            throw new IllegalArgumentException("Distance must be positive");
+        }
+    }
+
+    @Override
     public int lastTrajectory() {
         return traveledDistances.get(traveledDistances.size() - 1);
     }
 
+    @Override
     public int totalDistance() {
         int total = 0;
         for (int distance : traveledDistances) {
@@ -103,22 +115,21 @@ public class Vehicle implements TraveledDistance {
 
     @Override
     public String toString() {
-        return "Vehicle{" +
-                ", make='" + make + '\'' +
-                ", licensePlate='" + licensePlate + '\'' +
-                ", model='" + model + '\'' +
-                "power=" + power +
-                "totalDistance=" + totalDistance() +
-                '}';
+        return make + " " + model + " (" + licensePlate + ") " + power + "hp";
     }
 
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Vehicle vehicle = (Vehicle) o;
-        return getPower() == vehicle.getPower() && Objects.equals(getMake(), vehicle.getMake()) && Objects.equals(getModel(), vehicle.getModel());
+        return getPower() == vehicle.getPower() && Objects.equals(getMake(), vehicle.getMake())
+            && Objects.equals(getModel(), vehicle.getModel());
     }
 
     @Override

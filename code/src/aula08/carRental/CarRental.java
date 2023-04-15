@@ -1,14 +1,14 @@
 package aula08.carRental;
 
 import aula08.carRental.vehicles.Vehicle;
-
 import java.util.ArrayList;
 
 public class CarRental {
-    String name;
-    String postalCode;
-    String email;
-    ArrayList<Vehicle> vehicles = new ArrayList<>();
+
+    private String name;
+    private String postalCode;
+    private String email;
+    private ArrayList<Vehicle> vehicles = new ArrayList<>();
 
     public CarRental(String name, String postalCode, String email) {
         validate(name, postalCode, email);
@@ -89,7 +89,7 @@ public class CarRental {
     }
 
     public String getVehicleWithHighestTotalDistance() {
-        int highestTraveledDistance = 0;
+        int highestTraveledDistance = -1;
         Vehicle vehicleWithHighestTraveledDistance = null;
         for (Vehicle vehicle : this.vehicles) {
             if (vehicle.totalDistance() > highestTraveledDistance) {
@@ -116,11 +116,6 @@ public class CarRental {
 
     @Override
     public String toString() {
-        return "RentingShop{" +
-                "name='" + name + '\'' +
-                ", postalCode='" + postalCode + '\'' +
-                ", email='" + email + '\'' +
-                ", vehicles=" + vehicles +
-                '}';
+        return this.name + "@" + this.postalCode + " email: " + this.email;
     }
 }
