@@ -22,7 +22,7 @@ public class Main {
         System.out.println(heavyGoodsVehicle);
         // Test Renting shop
         RentingShop rentingShop = new RentingShop("Ferrari", "1234-123", "ferrari@cars.it");
-        rentingShop.addVehicle(motorcicle);
+        rentingShop.addVehicle(motorcycle);
         rentingShop.addVehicle(taxi);
         rentingShop.addVehicle(heavyPassengerVehicle);
         rentingShop.addVehicle(heavyGoodsVehicle);
