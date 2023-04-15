@@ -1,4 +1,4 @@
-package aula08.carSeller;
+package aula08.carRental;
 
 public interface ElectricVehicle {
     int range();

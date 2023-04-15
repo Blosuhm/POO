@@ -1,23 +1,23 @@
-package aula08.carSeller;
+package aula08.carRental;
 
-import aula08.carSeller.vehicles.Vehicle;
+import aula08.carRental.vehicles.Vehicle;
 
 import java.util.ArrayList;
 
-public class RentingShop {
+public class CarRental {
     String name;
     String postalCode;
     String email;
     ArrayList<Vehicle> vehicles = new ArrayList<>();
 
-    public RentingShop(String name, String postalCode, String email) {
+    public CarRental(String name, String postalCode, String email) {
         validate(name, postalCode, email);
         this.name = name;
         this.postalCode = postalCode;
         this.email = email;
     }
 
-    public RentingShop(String name, String postalCode, String email, ArrayList<Vehicle> vehicles) {
+    public CarRental(String name, String postalCode, String email, ArrayList<Vehicle> vehicles) {
         validate(name, postalCode, email);
         this.name = name;
         this.postalCode = postalCode;

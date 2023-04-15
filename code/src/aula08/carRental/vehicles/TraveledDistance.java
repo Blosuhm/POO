@@ -1,4 +1,4 @@
-package aula08.carSeller.vehicles;
+package aula08.carRental.vehicles;
 
 public interface TraveledDistance {
     void trajectory(int kilometers);

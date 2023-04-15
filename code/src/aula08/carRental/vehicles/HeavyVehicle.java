@@ -1,4 +1,4 @@
-package aula08.carSeller.vehicles;
+package aula08.carRental.vehicles;
 
 public class HeavyVehicle extends Vehicle {
     String vehicleIdentificationNumber;
