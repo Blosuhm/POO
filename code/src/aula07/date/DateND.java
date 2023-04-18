@@ -9,11 +9,29 @@ public class DateND extends Date {
         setDate(day, month, year);
     }
 
+    private static void validDay(int day, int month, int year) {
+        if (day < 1 || day > monthDays(month, year)) {
+            throw new IllegalArgumentException("Invalid day");
+        }
+    }
+
+    private static void validMonth(int month) {
+        if (!isMonth(month)) {
+            throw new IllegalArgumentException("Invalid month");
+        }
+    }
+
+    private static void validDate(int day, int month, int year) {
+        validDay(day, month, year);
+        validMonth(month);
+    }
+
     @Override
     public int[] getDate() {
         int currentDays = this.days;
         int year = 2000;
-        while ((!isLeapYear(year) && currentDays >= 365) || (isLeapYear(year) && currentDays >= 366)) {
+        while ((!isLeapYear(year) && currentDays >= 365) || (isLeapYear(year)
+            && currentDays >= 366)) {
             currentDays -= 365;
             if (isLeapYear(year)) {
                 currentDays--;
@@ -30,7 +48,7 @@ public class DateND extends Date {
             currentDays -= monthDays;
         }
         int day = currentDays;
-        return new int[] { day, month, year };
+        return new int[]{day, month, year};
 
     }
 
@@ -51,22 +69,6 @@ public class DateND extends Date {
         this.days = yearDays + monthDays + day;
     }
 
-    private static void validDay(int day, int month, int year) {
-        if (day < 1 || day > monthDays(month, year)) {
-            throw new IllegalArgumentException("Invalid day");
-        }
-    }
-
-    private static void validMonth(int month) {
-        if (!isMonth(month)) {
-            throw new IllegalArgumentException("Invalid month");
-        }
-    }
-
-    private static void validDate(int day, int month, int year) {
-        validDay(day, month, year);
-        validMonth(month);
-    }
 
     @Override
     public int getYear() {

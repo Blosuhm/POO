@@ -10,19 +10,6 @@ public class DateYMD extends Date {
         setDate(day, month, year);
     }
 
-    @Override
-    protected int[] getDate() {
-        return new int[] { day, month, year };
-    }
-
-    @Override
-    protected void setDate(int day, int month, int year) {
-        validDate(day, month, year);
-        this.day = day;
-        this.month = month;
-        this.year = year;
-    }
-
     private static void validDay(int day, int month, int year) {
         if (day < 1 || day > monthDays(month, year)) {
 
@@ -39,6 +26,19 @@ public class DateYMD extends Date {
     private static void validDate(int day, int month, int year) {
         validDay(day, month, year);
         validMonth(month);
+    }
+
+    @Override
+    protected int[] getDate() {
+        return new int[]{day, month, year};
+    }
+
+    @Override
+    protected void setDate(int day, int month, int year) {
+        validDate(day, month, year);
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 
     @Override
@@ -82,8 +82,9 @@ public class DateYMD extends Date {
         }
     }
 
+
     @Override
     public String toString() {
-        return String.format("%04d-%02d-%02d", year, month, day);
+        return String.format("%02d-%02d-%04d", day, month, year);
     }
 }

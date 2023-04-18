@@ -3,6 +3,7 @@ package aula06;
 import aula05.DateYMD;
 
 public class Person {
+
     private String name;
     private int cc;
     private DateYMD birthDate;
@@ -31,15 +32,11 @@ public class Person {
             throw new IllegalArgumentException("Invalid name");
         }
         if (!isValidCC(cc)) {
-            throw new IllegalArgumentException("Invalid cc");
+            throw new IllegalArgumentException("CC should have 8 digits");
         }
         if (!isValidBirthDate(birthDate)) {
             throw new IllegalArgumentException("Invalid birth date");
         }
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getCc() {
@@ -62,8 +59,12 @@ public class Person {
         return this.name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
-        return getName() + "; " + ", cc: " + getCc() + "; Birth Date: " + getBirthDate();
+        return getName() + "; cc: " + getCc() + "; Birth Date: " + getBirthDate();
     }
 }
