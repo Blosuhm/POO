@@ -34,7 +34,8 @@ public class CollectionTester {
         String[] METHODS = {"add", "search", "remove"};
         ArrayList<ArrayList<Double>> table = new ArrayList<>();
 
-        System.out.println(name);
+        String title = String.format("%-16s", name) + String.format("%44s", "").replace(" ", "-");
+        System.out.println(title);
         for (int DIM : DIMS) {
             table.add(checkPerformance(collection, DIM));
         }

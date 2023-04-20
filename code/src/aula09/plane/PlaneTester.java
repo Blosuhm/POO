@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class PlaneTester {
 
+    private static final PlaneManager planeManager = new PlaneManager();
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        PlaneManager planeManager = new PlaneManager();
-        Scanner scanner = new Scanner(System.in);
+        String rawChoice;
         int choice;
 
         do {
@@ -21,29 +23,31 @@ public class PlaneTester {
             System.out.println("0. Exit");
 
             System.out.print("Enter your choice: ");
-            choice = scanner.nextInt();
+            rawChoice = validatedInput(Regex.MENU_OPTIONS, "Try again: ", true);
+            assert rawChoice != null;
+            choice = Integer.parseInt(rawChoice);
 
             switch (choice) {
                 case 1:
-                    addPlane(planeManager, scanner);
+                    addPlane();
                     break;
                 case 2:
-                    removePlane(planeManager, scanner);
+                    removePlane();
                     break;
                 case 3:
-                    searchPlane(planeManager, scanner);
+                    searchPlane();
                     break;
                 case 4:
-                    printAllPlanes(planeManager);
+                    printAllPlanes();
                     break;
                 case 5:
-                    printCommercialPlanes(planeManager);
+                    printCommercialPlanes();
                     break;
                 case 6:
-                    printMilitaryPlanes(planeManager);
+                    printMilitaryPlanes();
                     break;
                 case 7:
-                    printFastestPlane(planeManager);
+                    printFastestPlane();
                     break;
                 case 0:
                     System.out.println("Exiting program...");
@@ -57,24 +61,34 @@ public class PlaneTester {
         scanner.close();
     }
 
-    private static void addPlane(PlaneManager planeManager, Scanner scanner) {
+    private static String validatedInput(String regex, String errorMessage, boolean recursive) {
+        String rawInput = scanner.nextLine();
+        if (!rawInput.matches(regex)) {
+            System.out.println(errorMessage);
+
+            return recursive ? validatedInput(regex, errorMessage, true) : null;
+        }
+        return rawInput;
     }
 
-    private static void removePlane(PlaneManager planeManager, Scanner scanner) {
+    private static void addPlane() {
     }
 
-    private static void searchPlane(PlaneManager planeManager, Scanner scanner) {
+    private static void removePlane() {
     }
 
-    private static void printAllPlanes(PlaneManager planeManager) {
+    private static void searchPlane() {
     }
 
-    private static void printCommercialPlanes(PlaneManager planeManager) {
+    private static void printAllPlanes() {
     }
 
-    private static void printMilitaryPlanes(PlaneManager planeManager) {
+    private static void printCommercialPlanes() {
     }
 
-    private static void printFastestPlane(PlaneManager planeManager) {
+    private static void printMilitaryPlanes() {
+    }
+
+    private static void printFastestPlane() {
     }
 }
