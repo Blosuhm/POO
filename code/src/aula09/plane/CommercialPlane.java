@@ -34,6 +34,7 @@ public class CommercialPlane extends Plane {
 
     @Override
     public String toString() {
-        return super.toString() + " - " + this.numOfCrewMembers + " - Type: " + this.getPlaneType();
+        return super.toString() + " - " + this.numOfCrewMembers + " Crew Members - Type: "
+            + this.getPlaneType();
     }
 }

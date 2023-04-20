@@ -105,7 +105,7 @@ public class Plane {
 
     @Override
     public String toString() {
-        return String.format("Plane(%s) - %s %s (%d) - %d passengers - %d km/h",
+        return String.format("Plane(%s) - %s %s (%d) - %d Passengers - %d km/h",
             this.id, this.manufacturer, this.model, this.year, this.maxNumOfPassengers,
             this.maxSpeed);
     }

@@ -1,9 +1,9 @@
 package aula09.plane;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class PlaneManager {
 
@@ -22,19 +22,29 @@ public class PlaneManager {
     }
 
     public List<Plane> getCommercialPlanes() {
-        return planes.values().stream()
-            .filter(plane -> plane.getPlaneType().equals("Commercial"))
-            .collect(Collectors.toList());
+        List<Plane> commercialPlanes = new ArrayList<>();
+        for (Plane plane : this.planes.values()) {
+            if (plane.getPlaneType().equals("Commercial")) {
+                commercialPlanes.add(plane);
+            }
+        }
+        return commercialPlanes;
     }
 
     public List<Plane> getMilitaryPlanes() {
-        return planes.values().stream()
-            .filter(plane -> plane.getPlaneType().equals("Military"))
-            .collect(Collectors.toList());
+        List<Plane> militaryPlanes = new ArrayList<>();
+        for (Plane plane : this.planes.values()) {
+            if (plane.getPlaneType().equals("Military")) {
+                militaryPlanes.add(plane);
+            }
+        }
+        return militaryPlanes;
     }
 
     public void printAllPlanes() {
-        planes.values().forEach(System.out::println);
+        for (Plane plane : this.planes.values()) {
+            System.out.println(plane);
+        }
     }
 
     public Plane getFastestPlane() {
