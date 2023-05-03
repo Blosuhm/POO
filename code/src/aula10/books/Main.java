@@ -1,5 +1,7 @@
 package aula10.books;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -72,6 +74,17 @@ public class Main {
 
         // Print the updated modernLibrary
         System.out.println(modernLibrary);
+
+        System.out.println("------------- Testing Random Book -------------\n");
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(randomBook(modernLibrary, Genre.DRAMA));
+        }
     }
 
+    public static Book randomBook(ModernLibrary modernLibrary, Genre genre) {
+        List<Book> books = modernLibrary.getBooks(genre);
+        int randomIndex = (int) (Math.random() * books.size());
+        return books.get(randomIndex);
+    }
 }

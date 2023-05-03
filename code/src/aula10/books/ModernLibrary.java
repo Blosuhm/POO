@@ -50,6 +50,14 @@ public class ModernLibrary {
         return this;
     }
 
+    public List<Book> getBooks(Genre genre) {
+        if (!library.containsKey(genre)) {
+            throw new IllegalArgumentException("Genre not found");
+        }
+
+        return library.get(genre);
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
