@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="664e646a-ac09-4a90-8826-cba055523339" name="Changes" comment="2.2 and 2.3 from the exercizes" />
+    <list default="true" id="d222c75d-ef27-43c9-b96d-6c693ff2f796" name="Changes" comment="all 10">
+      <change afterPath="$PROJECT_DIR$/src/aula11/energy/EnergyUsageReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula11/energy/IEnergyUsageReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula11/grades/Gradebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula11/grades/IGradebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula11/grades/SimpleGradeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula11/wordCounter/Reader.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -21,7 +30,7 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -29,59 +38,212 @@
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
-  <component name="ProjectId" id="2M05iY6GYe3wXvKrsGUFL8gGSJK" />
+  <component name="ProjectId" id="2OHnwW1Eseq7epeZmalcHszE1aJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/UNI/YEAR-01/SEMESTER-02/POO",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zakhar/UNI/POO/code&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Space Code Reviews" />
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.111718744" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Profiler" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Dependency Checker" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32999998" />
+      <window_info anchor="bottom" id="Problems View" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Services" order="3" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="Meet New UI" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="Database" order="1" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
+      <window_info anchor="right" id="github.copilotToolWindow" order="3" weight="0.32994792" />
+    </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="aula11.energy" />
+      <recent name="aula11.grades" />
+      <recent name="aula08.shoppingCart" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/aula11/energy" />
+      <recent name="$PROJECT_DIR$/src/aula11/grades" />
+      <recent name="$PROJECT_DIR$/src/aula11/bananas" />
+      <recent name="$PROJECT_DIR$/src/aula11/wordCounter" />
+      <recent name="$PROJECT_DIR$/src/aula08/shoppingCart" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula09.plane" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="664e646a-ac09-4a90-8826-cba055523339" name="Changes" comment="" />
-      <created>1676891789457</created>
+      <changelist id="d222c75d-ef27-43c9-b96d-6c693ff2f796" name="Changes" comment="" />
+      <created>1681226613886</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1676891789457</updated>
-      <workItem from="1676891792997" duration="2211000" />
-      <workItem from="1676894127121" duration="113000" />
-      <workItem from="1676894259349" duration="912000" />
-      <workItem from="1676927649962" duration="16000" />
-      <workItem from="1678741794191" duration="957000" />
-      <workItem from="1681557896890" duration="137000" />
-      <workItem from="1681558109938" duration="69000" />
-      <workItem from="1681561312767" duration="177000" />
-      <workItem from="1681571498028" duration="126000" />
-      <workItem from="1681571633793" duration="332000" />
+      <updated>1681226613886</updated>
+      <workItem from="1681226614724" duration="302000" />
+      <workItem from="1681227345500" duration="43000" />
+      <workItem from="1681227394467" duration="1500000" />
+      <workItem from="1681228900539" duration="188000" />
+      <workItem from="1681229095381" duration="2225000" />
+      <workItem from="1681231409148" duration="787000" />
+      <workItem from="1681286924359" duration="3809000" />
+      <workItem from="1681380965908" duration="1711000" />
+      <workItem from="1681558415503" duration="498000" />
+      <workItem from="1681558968234" duration="33000" />
+      <workItem from="1681559165386" duration="884000" />
+      <workItem from="1681560474526" duration="271000" />
+      <workItem from="1681563267472" duration="29000" />
+      <workItem from="1681563300886" duration="929000" />
+      <workItem from="1681568848051" duration="249000" />
+      <workItem from="1681569117729" duration="598000" />
+      <workItem from="1681570173407" duration="1167000" />
+      <workItem from="1681571843216" duration="128000" />
+      <workItem from="1681586510389" duration="6315000" />
+      <workItem from="1681816571538" duration="33000" />
+      <workItem from="1681816610626" duration="1189000" />
+      <workItem from="1681830532827" duration="534000" />
+      <workItem from="1681831073126" duration="1137000" />
+      <workItem from="1681832219602" duration="4882000" />
+      <workItem from="1681981508476" duration="3685000" />
+      <workItem from="1681985623285" duration="5711000" />
+      <workItem from="1682004072251" duration="5372000" />
+      <workItem from="1683040059942" duration="545000" />
+      <workItem from="1683040613646" duration="6085000" />
+      <workItem from="1683101689218" duration="4044000" />
+      <workItem from="1683126242007" duration="879000" />
+      <workItem from="1683144398890" duration="38000" />
+      <workItem from="1683645065589" duration="6592000" />
     </task>
-    <task id="LOCAL-00001" summary="2.2 and 2.3 from the exercizes">
-      <created>1676893774000</created>
+    <task id="LOCAL-00001" summary="lez go">
+      <created>1681563359002</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1676893774000</updated>
+      <updated>1681563359003</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Renames">
+      <created>1681568699595</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681568699595</updated>
+    </task>
+    <task id="LOCAL-00003" summary="8.1 done i think (it has some validation problems)">
+      <created>1681576678845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681576678845</updated>
+    </task>
+    <task id="LOCAL-00004" summary="8.1 done i think (it has some validation problems)">
+      <created>1681576689725</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681576689725</updated>
+    </task>
+    <task id="LOCAL-00005" summary="8.1 done i think (it has some validation problems)">
+      <created>1681576713698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681576713698</updated>
+    </task>
+    <task id="LOCAL-00006" summary="8.2 and 8.3 done">
+      <created>1681593068204</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681593068204</updated>
+    </task>
+    <task id="LOCAL-00007" summary="para o martim">
+      <created>1681835143723</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681835143723</updated>
+    </task>
+    <task id="LOCAL-00008" summary="para o martim">
+      <created>1681835158315</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681835158315</updated>
+    </task>
+    <task id="LOCAL-00009" summary="sets are broken">
+      <created>1681983907398</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681983907398</updated>
+    </task>
+    <task id="LOCAL-00010" summary="planes">
+      <created>1681991335278</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681991335278</updated>
+    </task>
+    <task id="LOCAL-00011" summary="PLANES">
+      <created>1682009002260</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682009002260</updated>
+    </task>
+    <task id="LOCAL-00012" summary="10 except 4">
+      <created>1683101961239</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683101961239</updated>
+    </task>
+    <task id="LOCAL-00013" summary="all 10">
+      <created>1683144418948</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683144418948</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,8 +261,30 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2.2 and 2.3 from the exercizes" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.2 and 2.3 from the exercizes" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="lez go" />
+    <MESSAGE value="Renames" />
+    <MESSAGE value="8.1 done i think (it has some validation problems)" />
+    <MESSAGE value="8.2 and 8.3 done" />
+    <MESSAGE value="para o martim" />
+    <MESSAGE value="sets are broken" />
+    <MESSAGE value="planes" />
+    <MESSAGE value="PLANES" />
+    <MESSAGE value="10 except 4" />
+    <MESSAGE value="all 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="all 10" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

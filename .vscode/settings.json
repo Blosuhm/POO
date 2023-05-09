@@ -1,8 +1,0 @@
-{
-  "cSpell.words": ["aula", "nmec"],
-  "java.debug.settings.onBuildFailureProceed": true,
-  "java.format.settings.url": ".vscode/java-formatter.xml",
-  "[java]": {
-    "editor.tabSize": 4
-  }
-}
