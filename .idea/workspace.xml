@@ -4,13 +4,317 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d222c75d-ef27-43c9-b96d-6c693ff2f796" name="Changes" comment="all 10">
-      <change afterPath="$PROJECT_DIR$/src/aula11/energy/EnergyUsageReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula11/energy/IEnergyUsageReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula11/grades/Gradebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula11/grades/IGradebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula11/grades/SimpleGradeCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula11/wordCounter/Reader.java" afterDir="false" />
+    <list default="true" id="d222c75d-ef27-43c9-b96d-6c693ff2f796" name="Changes" comment="11 until 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/java-formatter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2021-aula01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2021-aula02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2021-aula03-extra.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2021-aula03.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2021-aula04.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula03-extra.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula03.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula04.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula05.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula06.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula07.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula08.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/POO-2022-aula09.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/Python-Java-Comparison.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula01/KmToMiles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula01/MyFirstClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula01/PescadaDeRaboNaBoca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula01/ReadFileExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula01/StringExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula01/major.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula04/CarDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula04/CashRegisterDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula04/SimpleCarDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula05/Ex3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula08/A08E02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula08/ShoppingCartTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula09/CommercialPlane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula09/MilitaryPlane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula09/Plane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula09/PlaneManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/aula09/PlaneTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/moodle_t1_2122.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/t1_2021_resolvido_moodle.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P/uni-calendar.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/POO_01_Introdução.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/POO_02_ControloFluxo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/POO_02_Modularidade_MetodosEstaticos.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/POO_03_Classes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/POO_04_Herança.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/POO_05_Polimorfismo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/POO_06_Enum.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/POO_07_Coleções.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/POO_TP_Slides_English.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/dictionaries/zakhar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula01/KmToMiles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula01/MyFirstClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula01/PescadaDeRaboNaBoca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula01/ReadFileExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula01/StringExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula01/major.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/AverageVelocityEx5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/CelsiusToFahrenheitEx2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/CountDownEx9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/DistanceBetweenPointsEx7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/EnergyToWarmWaterEx3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/HypotenuseEx8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/InvestmentEx4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/KmToMilesEx1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/MinMaxAvgCountEx10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/SecondsToHMSEx6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula02/utils/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula03/CalendarEx5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula03/HiLoEx3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula03/InvestmentEx2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula03/PautaEx4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula03/PrimesUpToInputEx1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula03/utils/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/CarDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/CashRegister.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/CashRegisterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/FiguresMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/SimpleCarDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/geometric_figures/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/geometric_figures/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula04/geometric_figures/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula05/Auction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula05/Calendar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula05/CalendarMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula05/DateYMD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula05/DateYMDMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula05/Property.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula05/RealEstate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula05/RealEstateManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula06/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula06/ContactManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula06/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula06/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula06/ScholarshipHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula06/Set.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula06/SetMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula06/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula06/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/date/Date.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/date/DateND.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/date/DateTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/date/DateYMD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/date/DateYMDMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/figures/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/figures/Figure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/figures/FiguresMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/figures/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula07/figures/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/CarRental.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/ElectricVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/HeavyGoodsVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/HeavyPassengerVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/HeavyPassengerVehicleElectric.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/HeavyVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/LightMotorVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/LightMotorVehicleElectric.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/Motorcycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/MotorcycleType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/Taxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/TraveledDistance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/carRental/vehicles/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/A08E02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/Alimento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/Carne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/Cereal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/DiaSemana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/Ementa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/Legume.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/Peixe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/Prato.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/PratoDieta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/PratoVegetariano.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/TipoPeixe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/food/VariedadeCarne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/shoppingCart/GenericProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/shoppingCart/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/shoppingCart/ProductWithDiscount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/shoppingCart/Purchase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/shoppingCart/ShoppingCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula08/shoppingCart/ShoppingCartTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula09/plane/CommercialPlane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula09/plane/MilitaryPlane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula09/plane/Plane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula09/plane/PlaneManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula09/plane/PlaneTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula09/plane/Regex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula09/testing_collections/ALDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula09/testing_collections/ALDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula09/testing_collections/CollectionTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula10/books/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula10/books/Genre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula10/books/Library.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula10/books/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula10/books/ModernLibrary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula10/readFile/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula10/readFile/words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/aula10/words/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/intellij-java-google-style.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/scriptForEval/CheckersPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/scriptForEval/ChessPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/scriptForEval/ITournamentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/scriptForEval/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/scriptForEval/TournamentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/scriptForEval/TournamentManagerMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/utils/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/utils/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula01/KmToMiles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula01/MyFirstClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula01/PescadaDeRaboNaBoca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula01/ReadFileExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula01/StringExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula01/major.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/AverageVelocityEx5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/CelsiusToFahrenheitEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/CountDownEx9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/DistanceBetweenPointsEx7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/EnergyToWarmWaterEx3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/HypotenuseEx8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/InvestmentEx4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/KmToMilesEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/MinMaxAvgCountEx10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/SecondsToHMSEx6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula02/utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula03/CalendarEx5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula03/HiLoEx3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula03/InvestmentEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula03/PautaEx4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula03/PrimesUpToInputEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula03/utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula04/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula04/CarDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula04/CashRegisterDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula04/FiguresMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula04/SimpleCarDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula04/geometric_figures/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula04/geometric_figures/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula04/geometric_figures/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula05/Auction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula05/Calendar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula05/CalendarMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula05/DateYMD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula05/DateYMDMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula05/Property.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula05/RealEstate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula05/RealEstateManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula06/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula06/ContactManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula06/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula06/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula06/ScholarshipHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula06/Set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula06/SetMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula06/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula06/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/date/Date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/date/DateND.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/date/DateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/date/DateYMD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/date/DateYMDMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/figures/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/figures/Figure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/figures/FiguresMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/figures/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula07/figures/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/CarRental.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/ElectricVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/HeavyGoodsVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/HeavyPassengerVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/HeavyPassengerVehicleElectric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/HeavyVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/LightMotorVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/LightMotorVehicleElectric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/Motorcycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/MotorcycleType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/Taxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/TraveledDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/carRental/vehicles/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/A08E02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/Alimento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/Carne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/Cereal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/DiaSemana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/Ementa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/Legume.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/Peixe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/Prato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/PratoDieta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/PratoVegetariano.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/TipoPeixe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/food/VariedadeCarne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/shoppingCart/GenericProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/shoppingCart/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/shoppingCart/ProductWithDiscount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/shoppingCart/Purchase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/shoppingCart/ShoppingCart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula08/shoppingCart/ShoppingCartTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula09/plane/CommercialPlane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula09/plane/MilitaryPlane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula09/plane/Plane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula09/plane/PlaneManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula09/plane/PlaneTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula09/plane/Regex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula09/testing_collections/ALDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula09/testing_collections/ALDemo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula09/testing_collections/CollectionTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula10/books/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula10/books/Genre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula10/books/Library.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula10/books/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula10/books/ModernLibrary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula10/readFile/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula10/readFile/words.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula10/readFile/words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula10/words/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula11/energy/EnergyUsageReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula11/energy/IEnergyUsageReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula11/grades/Gradebook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula11/grades/IGradebook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula11/grades/SimpleGradeCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/aula11/wordCounter/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/intellij-java-google-style.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/scriptForEval/CheckersPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/scriptForEval/ChessPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/scriptForEval/ITournamentManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/scriptForEval/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/scriptForEval/TournamentManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/scriptForEval/TournamentManagerMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/aula02/114478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/aula03/114478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/aula04/114478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/aula05/114478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/aula06/114478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/aula07/114478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/aula08/114478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/aula09/114478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/aula10/114478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zips/scriptforeval/114478.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +334,7 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -150,7 +454,7 @@
       <workItem from="1683101689218" duration="4044000" />
       <workItem from="1683126242007" duration="879000" />
       <workItem from="1683144398890" duration="38000" />
-      <workItem from="1683645065589" duration="6592000" />
+      <workItem from="1683645065589" duration="6904000" />
     </task>
     <task id="LOCAL-00001" summary="lez go">
       <created>1681563359002</created>
@@ -243,7 +547,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683144418948</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="all 10">
+      <created>1683662901259</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683662901259</updated>
+    </task>
+    <task id="LOCAL-00015" summary="11 until 2">
+      <created>1683663060351</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683663060351</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +590,8 @@
     <MESSAGE value="PLANES" />
     <MESSAGE value="10 except 4" />
     <MESSAGE value="all 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="all 10" />
+    <MESSAGE value="11 until 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="11 until 2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
