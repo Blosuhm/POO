@@ -14,5 +14,6 @@ public interface IEnergyUsageReport {
 
     double calculateTotalUsage(int uid);
 
-    void generateReport(String filepath);
+    void generateReport(String filepath) throws FileNotFoundException;
+
 }

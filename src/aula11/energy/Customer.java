@@ -27,4 +27,14 @@ public class Customer {
     public void setMeterReadings(List<Double> meterReadings) {
         this.meterReadings = meterReadings;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(customerId);
+        for (Double reading : meterReadings) {
+            sb.append("|").append(Math.round(reading));
+        }
+        return sb.toString();
+    }
 }

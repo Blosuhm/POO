@@ -11,7 +11,7 @@ public class EnergyUsageReportTester {
         EnergyUsageReport energyReport = new EnergyUsageReport();
 
         // Load the customer data from a text file using the load() method
-        energyReport.load("clients.txt");
+        energyReport.load("src/aula11/energy/clients.txt");
 
         // Add one or more customers to the collection using the addCustomer() method
         Customer newCustomer = new Customer(999, Arrays.asList(1500.0, 2000.0, 2500.0, 3000.0));
@@ -28,6 +28,6 @@ public class EnergyUsageReportTester {
         System.out.println("Total energy usage for customer 1003: " + totalEnergyUsage);
 
         // Generate a report of all customers and their total energy usage using the generateReport() method
-        energyReport.generateReport("energy_report.txt");
+        energyReport.generateReport("src/aula11/energy/energy_report.txt");
     }
 }
