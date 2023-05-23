@@ -2,7 +2,7 @@ package aula11.wordCounter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ import java.util.TreeMap;
 
 public class Reader {
 
-    private static final List<String> words = new LinkedList<>();
+    private static final List<String> words = new ArrayList<>();
     private static final Map<String, Map<String, Integer>> wordCount = new TreeMap<>();
 
     public static void main(String[] args) throws FileNotFoundException {
@@ -26,6 +26,7 @@ public class Reader {
                 }
             }
         }
+        words.forEach(System.out::println);
 
         for (int i = 0; i < words.size() - 1; i++) {
             String word = words.get(i);
