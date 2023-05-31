@@ -7,7 +7,7 @@ public class Main {
     private final static MovieShelf movieShelf = new MovieShelf();
 
     public static void main(String[] args) throws FileNotFoundException {
-        movieShelf.loadMovies("src/aula12/movies/movies.txt");
+        movieShelf.loadMovies("src/aula12/movies/movies.tsv");
         System.out.println(movieShelf);
         System.out.println();
         movieShelf.printSortedByScore();
